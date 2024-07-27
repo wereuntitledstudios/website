@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f3f3; /* Color of the spaces on the left and right */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Padding for left and right spaces */
+}
+
+.logo {
+    width: 50px; /* Adjust the logo size as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Container to center the content */
+.container {
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 20px auto; /* Center the container horizontally and add top and bottom margin */
+    padding: 0 20px; /* Padding for left and right spaces */
+    background-color: #ffffff; /* Background color of the actual page content */
+}
+
+/* Main and Footer styles */
+main, footer {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive Design: Full width on small screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 0; /* Remove side padding */
+    }
+
+    main, footer {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
